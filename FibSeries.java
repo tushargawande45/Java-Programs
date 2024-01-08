@@ -1,4 +1,4 @@
-
+//without recursion
 
 public class FibSeries{
 	

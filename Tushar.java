@@ -2,17 +2,18 @@ import java.util.*;
 public class Tushar {
     
     public static void main(String[] args) {
-        Scanner sc =  new Scanner(System.in);
-        int number = sc.nextInt();
-        int result;
-        char[] digits = String.valueOf(number).toCharArray();
+        String str = "Radar";
+        String revStr = "";
 
-        for(double i=0;i<digits.length;i++){
-            
+        for(int i= str.length()-1;i>=0;i--){
+            revStr = revStr + str.charAt(i);
         }
-
-
-        
+        if(str.toLowerCase().equals(revStr.toLowerCase())){
+            System.out.println("Given String is Palindrome");
+        }
+        else{
+            System.out.println("Given String is not Palindrome");
+        }
 
     }
 }
